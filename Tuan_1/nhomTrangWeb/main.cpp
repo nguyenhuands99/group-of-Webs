@@ -1,8 +1,7 @@
-#pragma
+﻿#pragma
 
 #include "stdio.h"
 #include "conio.h"
-#include "TrangWeb.h"
 #include "NhomTrangWeb.h"
 
 void main()
@@ -13,19 +12,21 @@ void main()
 	nhomWeb.iSoTrangWeb = 0;
 
 	nhapMotTrangWeb(t1);
-	//themNhomTrangWeb(nhomWeb, t1);
+	themNhomTrangWeb(nhomWeb, t1);
 
 	//Next web
 
 	nhapMotTrangWeb(t1);
-	//themNhomTrangWeb(nhomWeb, t1);
+	themNhomTrangWeb(nhomWeb, t1);
 
 	//Next web
 
 	nhapMotTrangWeb(t1);
-	//themNhomTrangWeb(nhomWeb, t1);
+	themNhomTrangWeb(nhomWeb, t1);
 
-	//sapXepTrangWebTheoNgay(nhomWeb);
+	sapXepTrangWebTheoNgay(nhomWeb);
+	xuatMotTrangWeb(nhomWeb.arrTrangWeb[0]);
+
 
 	_getch();
 

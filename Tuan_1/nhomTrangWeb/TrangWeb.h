@@ -20,4 +20,3 @@ void xuatMotTrangWeb(TRANGWEB t);
 
 int soSanhHaiTrangWeb(TRANGWEB t1, TRANGWEB t2);
 
-//#endif

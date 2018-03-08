@@ -18,4 +18,4 @@ void themNhomTrangWeb(NHOMTRANGWEB &nhomTrangWeb, TRANGWEB t);
 void xuatNhomTrangWeb(NHOMTRANGWEB nhomTrangWeb, unsigned int iStt);
 
 //Sắp xếp các trang web theo giảm dần số lượt t ruy cập trong ngày
-void sapXepTrangWebTheoNgay(NHOMTRANGWEB nhomTrangWeb);
+void sapXepTrangWebTheoNgay(NHOMTRANGWEB &nhomTrangWeb);

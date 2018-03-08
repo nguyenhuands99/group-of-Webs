@@ -5,9 +5,9 @@ void nhapMotTrangWeb(TRANGWEB &t)
 {
 	printf("\nNhap dia chi: ");
 	gets_s(t.strTenTrangWeb);
-	printf("\nNhap so luong truy cap trong ngay va trong thang:  ");
+	printf("\nNhap so luong truy cap trong ngay va trong thang: ");
 	scanf_s("%d%d", &t.iSoLuotNgay, &t.iSoLuotThang);
-	//Hai dòng code này có mục đích xóa " dấu Enter" 
+	//Hai dòng code này có mục đích xóa "dấu Enter" 
 	//tránh việc '\n' bị đưa vào gets
 	int c;
 	while ((c = getchar()) != '\n'&&c != EOF);
@@ -15,7 +15,7 @@ void nhapMotTrangWeb(TRANGWEB &t)
 
 void xuatMotTrangWeb(TRANGWEB t)
 {
-	printf("\nTenn Web: %s", t.strTenTrangWeb);
+	printf("\nTen Web: %s", t.strTenTrangWeb);
 	printf("\nSo luot truy cap trong ngay va thang: %d, %d", t.iSoLuotNgay, t.iSoLuotThang);
 }
 

@@ -10,8 +10,8 @@ void themNhomTrangWeb(NHOMTRANGWEB &nhomTrangWeb, TRANGWEB t)
 	}
 	else
 	{
-		++nhomTrangWeb.iSoTrangWeb;
 		nhomTrangWeb.arrTrangWeb[nhomTrangWeb.iSoTrangWeb] = t;
+		nhomTrangWeb.iSoTrangWeb++;
 	}
 }
 
