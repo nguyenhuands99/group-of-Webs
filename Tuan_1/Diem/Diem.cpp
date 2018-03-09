@@ -19,6 +19,9 @@ double tinhKhoangCach(DIEM a, DIEM b)
 	return khoangcach;
 }
 
+//Hàm kiểm tra điểm thuộc góc phần tư nào: 
+//	 Hàm trả về 1,2,3,4 tương ứng với góc phần tư thứ 1,2,3,4. 
+//	 Trường hợp đặc biệt hàm trả về 0: gốc tọa độ; -1: nếu thuộc trục Ox, -2: nếu thuộc trục Oy
 int kiemTraGocPhanTu(DIEM a)
 {
 	if (a.iX == 0 || a.iY == 0)
@@ -46,6 +49,9 @@ int kiemTraGocPhanTu(DIEM a)
 	}
 }
 
+//Hàm tính chu vi tam giác:
+//	Nếu không phải tam giác (thẳng hàng): trả về 0
+//	Trả về chu vi nếu thỏa điều kiện tam giác
 double chuViTamGiac(DIEM a, DIEM b, DIEM c)
 {
 	/*Xét điều kiện không tạo thành tam giác (3 điểm thẳng hàng):

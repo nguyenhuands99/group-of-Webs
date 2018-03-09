@@ -22,4 +22,7 @@ int kiemTraGocPhanTu(DIEM a);
 //	Trả về chu vi nếu thỏa điều kiện tam giác
 double chuViTamGiac(DIEM a, DIEM b, DIEM c); 
 
+//Hàm tính diện tích tam giác:
+//	Nếu không phải tam giác (thẳng hàng): trả về 0
+//	Trả về diện tích nếu thỏa điều kiện tam giác
 double dienTichTamGiac(DIEM a, DIEM b, DIEM c);
