@@ -2,6 +2,7 @@
 
 #include "PhanSo.h"
 
+//Hàm nhập phân số, điều kiện mẫu khác 0
 void nhapPhanSo(PHANSO &p)
 {
 	do
@@ -13,12 +14,22 @@ void nhapPhanSo(PHANSO &p)
 			printf("\nPhan so ban da nhap khong hop le. Vui long nhap lai");
 		}
 		else
+		{
 			break;
+		}
 	} while (p.iMauSo == 0);
 }
 
-void xuatPhanSo(PHANSO p)
+/*Hàm xuất phân số dưới dạng chuẩn (chưa rút gọn):
+chuyển dấu "-" ở dưới mẫu lên tử*/
+void xuatPhanSo(PHANSO &p)
 {
+	if (p.iMauSo < 0) //Mẫu âm
+	{
+		//Chuyển dấu trừ lên mẫu
+		p.iMauSo = -p.iMauSo;
+		p.iTuSo = -p.iTuSo;
+	}
 	printf("%d/%d", p.iTuSo, p.iMauSo);
 }
 
@@ -70,8 +81,13 @@ PHANSO thuongPhanSo(PHANSO p1, PHANSO p2)
 	return thuong;
 }
 
+//hàm trả về ước chung lớn nhất 2 số, trả về 0 nếu không có ước chung. vd:UCLN(0,0)
 int UCLN(int a, int b)
 {
+	//Lấy số đối nếu có số âm
+	a = a > 0 ? a : -a;
+	b = b > 0 ? b : -b;
+
 	int ucln = a;
 
 	if (ucln > b)
